@@ -1,5 +1,4 @@
 00print_lol
-00SMALINUX
 0101
 01changer
 01d61084-d29e-11e9-96d1-7c5cf84ffe8e
