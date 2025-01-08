@@ -82,5 +82,6 @@ jobs:
     - name: Checkout the code
       uses: actions/checkout@v3
     - name: Run pip install
-      run: pip install -r requirements.txt
-      continue-on-error: true
+      run: |
+        pip install --no-cache-dir -r requirements.txt
+    continue-on-error: true
