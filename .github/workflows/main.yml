@@ -81,6 +81,9 @@ jobs:
           SCAN_ID: ${{ needs.create_scan_in_IR_Portal.outputs.scan_id }}
     - name: Checkout the code
       uses: actions/checkout@v3
+    - name: Install build dependencies
+      run: |
+          pip install setuptools wheel 
     - name: Run pip install
       run: |
         pip install --no-cache-dir -r requirements.txt
